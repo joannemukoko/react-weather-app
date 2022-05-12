@@ -4,15 +4,39 @@
   border-radius: 5px;
 }
 
-h1,
-ul {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: bold;
-}
-
 .units {
   position: relative;
   font-size: 16px;
-  top: -24px;
+  top: -22px;
   opacity: 70%;
+  color: #0969da;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.temperature {
+  font-size: 40px;
+  color: #0969da;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 100;
+  line-height: 29px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.description {
+  margin-bottom: 20px;
 }

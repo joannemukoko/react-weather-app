@@ -12,10 +12,15 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city"
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -27,16 +32,17 @@ export default function Weather() {
       </ul>
       <div className="row">
         <div className="col-6">
-          6°C
           <ReactAnimatedWeather
             icon="PARTLY_CLOUDY_DAY"
             color="#0969da"
-            size={40}
+            size={50}
             animate={true}
           />
+          <span className="temperature"> 6</span>{" "}
+          <span className="units">°C</span>
         </div>
         <div className="col-6">
-          <ul className="units">
+          <ul className="wind">
             <li> Precipitation: 15%</li>
             <li> Humidity: 45%</li>
             <li> Wind: 10pmh</li>
