@@ -4,6 +4,13 @@
   border-radius: 5px;
 }
 
+.Weather canvas {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
 .units {
   position: relative;
   font-size: 16px;
@@ -17,7 +24,7 @@ form {
 }
 
 .temperature {
-  font-size: 40px;
+  font-size: 45px;
   color: #0969da;
   font-weight: bold;
   position: relative;
