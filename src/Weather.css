@@ -17,6 +17,11 @@
   top: -22px;
   opacity: 70%;
   color: #0969da;
+  text-decoration: none;
+}
+
+.farenheit {
+  text-decoration: none;
 }
 
 form {
