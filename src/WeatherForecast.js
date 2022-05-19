@@ -17,13 +17,15 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col">
-            <div className="WeatherForecast-day">Thu</div>
-            <WeatherIcon code="01d" size={32} />
+            <div className="WeatherForecast-day">{forecast[0].dt}</div>
+            <WeatherIcon code={forecast[0].weather[0].icon} size={32} />
             <div className="WeatherForecast-temps">
               <span className="WeatherForecast-temp-max">
                 {forecast[0].temp.max}°{" "}
               </span>
-              <span className="WeatherForecast-temp-min">10°</span>
+              <span className="WeatherForecast-temp-min">
+                {forecast[0].temp.min}°
+              </span>
             </div>
           </div>
         </div>
